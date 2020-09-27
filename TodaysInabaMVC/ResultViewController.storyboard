@@ -17,13 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bxu-vv-k5K">
-                                <rect key="frame" x="20" y="144" width="374" height="618"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bxu-vv-k5K">
+                                <rect key="frame" x="20" y="204" width="374" height="498"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vxM-aX-WRH"/>
+                        <constraints>
+                            <constraint firstItem="vxM-aX-WRH" firstAttribute="trailing" secondItem="Bxu-vv-k5K" secondAttribute="trailing" constant="20" id="21B-lC-rxl"/>
+                            <constraint firstItem="Bxu-vv-k5K" firstAttribute="top" secondItem="vxM-aX-WRH" secondAttribute="top" constant="160" id="I7G-0L-gIb"/>
+                            <constraint firstItem="Bxu-vv-k5K" firstAttribute="centerX" secondItem="0xh-Pd-Rca" secondAttribute="centerX" id="OlD-M2-qn9"/>
+                            <constraint firstItem="Bxu-vv-k5K" firstAttribute="leading" secondItem="vxM-aX-WRH" secondAttribute="leading" constant="20" id="UMH-b1-eig"/>
+                            <constraint firstItem="vxM-aX-WRH" firstAttribute="bottom" secondItem="Bxu-vv-k5K" secondAttribute="bottom" constant="160" id="nKw-HA-CBq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jnM-qN-nCz"/>
                 </viewController>
