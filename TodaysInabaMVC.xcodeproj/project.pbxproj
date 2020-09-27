@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		59A72D8925204EBD002B614F /* TodaysInaba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodaysInaba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59A72D8925204EBD002B614F /* TodaysInabaMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodaysInabaMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A72D8C25204EBD002B614F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59A72D8E25204EBD002B614F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		59A72D9025204EBD002B614F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,10 +43,10 @@
 		59A72D9525204EBE002B614F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59A72D9825204EBE002B614F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59A72D9A25204EBE002B614F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59A72D9F25204EBE002B614F /* TodaysInabaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodaysInabaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59A72D9F25204EBE002B614F /* TodaysInabaMVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodaysInabaMVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A72DA325204EBE002B614F /* TodaysInabaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysInabaTests.swift; sourceTree = "<group>"; };
 		59A72DA525204EBE002B614F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59A72DAA25204EBE002B614F /* TodaysInabaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodaysInabaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59A72DAA25204EBE002B614F /* TodaysInabaMVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodaysInabaMVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A72DAE25204EBE002B614F /* TodaysInabaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysInabaUITests.swift; sourceTree = "<group>"; };
 		59A72DB025204EBE002B614F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,7 +79,7 @@
 		59A72D8025204EBD002B614F = {
 			isa = PBXGroup;
 			children = (
-				59A72D8B25204EBD002B614F /* TodaysInaba */,
+				59A72D8B25204EBD002B614F /* TodaysInabaMVC */,
 				59A72DA225204EBE002B614F /* TodaysInabaTests */,
 				59A72DAD25204EBE002B614F /* TodaysInabaUITests */,
 				59A72D8A25204EBD002B614F /* Products */,
@@ -89,14 +89,14 @@
 		59A72D8A25204EBD002B614F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				59A72D8925204EBD002B614F /* TodaysInaba.app */,
-				59A72D9F25204EBE002B614F /* TodaysInabaTests.xctest */,
-				59A72DAA25204EBE002B614F /* TodaysInabaUITests.xctest */,
+				59A72D8925204EBD002B614F /* TodaysInabaMVC.app */,
+				59A72D9F25204EBE002B614F /* TodaysInabaMVCTests.xctest */,
+				59A72DAA25204EBE002B614F /* TodaysInabaMVCUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		59A72D8B25204EBD002B614F /* TodaysInaba */ = {
+		59A72D8B25204EBD002B614F /* TodaysInabaMVC */ = {
 			isa = PBXGroup;
 			children = (
 				59A72D8C25204EBD002B614F /* AppDelegate.swift */,
@@ -107,7 +107,7 @@
 				59A72D9725204EBE002B614F /* LaunchScreen.storyboard */,
 				59A72D9A25204EBE002B614F /* Info.plist */,
 			);
-			path = TodaysInaba;
+			path = TodaysInabaMVC;
 			sourceTree = "<group>";
 		};
 		59A72DA225204EBE002B614F /* TodaysInabaTests */ = {
@@ -131,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		59A72D8825204EBD002B614F /* TodaysInaba */ = {
+		59A72D8825204EBD002B614F /* TodaysInabaMVC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59A72DB325204EBE002B614F /* Build configuration list for PBXNativeTarget "TodaysInaba" */;
+			buildConfigurationList = 59A72DB325204EBE002B614F /* Build configuration list for PBXNativeTarget "TodaysInabaMVC" */;
 			buildPhases = (
 				59A72D8525204EBD002B614F /* Sources */,
 				59A72D8625204EBD002B614F /* Frameworks */,
@@ -143,14 +143,14 @@
 			);
 			dependencies = (
 			);
-			name = TodaysInaba;
+			name = TodaysInabaMVC;
 			productName = TodaysInaba;
-			productReference = 59A72D8925204EBD002B614F /* TodaysInaba.app */;
+			productReference = 59A72D8925204EBD002B614F /* TodaysInabaMVC.app */;
 			productType = "com.apple.product-type.application";
 		};
-		59A72D9E25204EBE002B614F /* TodaysInabaTests */ = {
+		59A72D9E25204EBE002B614F /* TodaysInabaMVCTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59A72DB625204EBE002B614F /* Build configuration list for PBXNativeTarget "TodaysInabaTests" */;
+			buildConfigurationList = 59A72DB625204EBE002B614F /* Build configuration list for PBXNativeTarget "TodaysInabaMVCTests" */;
 			buildPhases = (
 				59A72D9B25204EBE002B614F /* Sources */,
 				59A72D9C25204EBE002B614F /* Frameworks */,
@@ -161,14 +161,14 @@
 			dependencies = (
 				59A72DA125204EBE002B614F /* PBXTargetDependency */,
 			);
-			name = TodaysInabaTests;
+			name = TodaysInabaMVCTests;
 			productName = TodaysInabaTests;
-			productReference = 59A72D9F25204EBE002B614F /* TodaysInabaTests.xctest */;
+			productReference = 59A72D9F25204EBE002B614F /* TodaysInabaMVCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		59A72DA925204EBE002B614F /* TodaysInabaUITests */ = {
+		59A72DA925204EBE002B614F /* TodaysInabaMVCUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59A72DB925204EBE002B614F /* Build configuration list for PBXNativeTarget "TodaysInabaUITests" */;
+			buildConfigurationList = 59A72DB925204EBE002B614F /* Build configuration list for PBXNativeTarget "TodaysInabaMVCUITests" */;
 			buildPhases = (
 				59A72DA625204EBE002B614F /* Sources */,
 				59A72DA725204EBE002B614F /* Frameworks */,
@@ -179,9 +179,9 @@
 			dependencies = (
 				59A72DAC25204EBE002B614F /* PBXTargetDependency */,
 			);
-			name = TodaysInabaUITests;
+			name = TodaysInabaMVCUITests;
 			productName = TodaysInabaUITests;
-			productReference = 59A72DAA25204EBE002B614F /* TodaysInabaUITests.xctest */;
+			productReference = 59A72DAA25204EBE002B614F /* TodaysInabaMVCUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 59A72D8425204EBD002B614F /* Build configuration list for PBXProject "TodaysInaba" */;
+			buildConfigurationList = 59A72D8425204EBD002B614F /* Build configuration list for PBXProject "TodaysInabaMVC" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +219,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				59A72D8825204EBD002B614F /* TodaysInaba */,
-				59A72D9E25204EBE002B614F /* TodaysInabaTests */,
-				59A72DA925204EBE002B614F /* TodaysInabaUITests */,
+				59A72D8825204EBD002B614F /* TodaysInabaMVC */,
+				59A72D9E25204EBE002B614F /* TodaysInabaMVCTests */,
+				59A72DA925204EBE002B614F /* TodaysInabaMVCUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,12 +285,12 @@
 /* Begin PBXTargetDependency section */
 		59A72DA125204EBE002B614F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 59A72D8825204EBD002B614F /* TodaysInaba */;
+			target = 59A72D8825204EBD002B614F /* TodaysInabaMVC */;
 			targetProxy = 59A72DA025204EBE002B614F /* PBXContainerItemProxy */;
 		};
 		59A72DAC25204EBE002B614F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 59A72D8825204EBD002B614F /* TodaysInaba */;
+			target = 59A72D8825204EBD002B614F /* TodaysInabaMVC */;
 			targetProxy = 59A72DAB25204EBE002B614F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -438,13 +438,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G8Q84RGJJC;
-				INFOPLIST_FILE = TodaysInaba/Info.plist;
+				INFOPLIST_FILE = TodaysInabaMVC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fuksae.TodaysInaba;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuksae.TodaysInabaMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,13 +458,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G8Q84RGJJC;
-				INFOPLIST_FILE = TodaysInaba/Info.plist;
+				INFOPLIST_FILE = TodaysInabaMVC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fuksae.TodaysInaba;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuksae.TodaysInabaMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,7 +489,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodaysInaba.app/TodaysInaba";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodaysInabaMVC.app/TodaysInabaMVC";
 			};
 			name = Debug;
 		};
@@ -511,7 +511,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodaysInaba.app/TodaysInaba";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodaysInabaMVC.app/TodaysInabaMVC";
 			};
 			name = Release;
 		};
@@ -558,7 +558,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		59A72D8425204EBD002B614F /* Build configuration list for PBXProject "TodaysInaba" */ = {
+		59A72D8425204EBD002B614F /* Build configuration list for PBXProject "TodaysInabaMVC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59A72DB125204EBE002B614F /* Debug */,
@@ -567,7 +567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59A72DB325204EBE002B614F /* Build configuration list for PBXNativeTarget "TodaysInaba" */ = {
+		59A72DB325204EBE002B614F /* Build configuration list for PBXNativeTarget "TodaysInabaMVC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59A72DB425204EBE002B614F /* Debug */,
@@ -576,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59A72DB625204EBE002B614F /* Build configuration list for PBXNativeTarget "TodaysInabaTests" */ = {
+		59A72DB625204EBE002B614F /* Build configuration list for PBXNativeTarget "TodaysInabaMVCTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59A72DB725204EBE002B614F /* Debug */,
@@ -585,7 +585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59A72DB925204EBE002B614F /* Build configuration list for PBXNativeTarget "TodaysInabaUITests" */ = {
+		59A72DB925204EBE002B614F /* Build configuration list for PBXNativeTarget "TodaysInabaMVCUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59A72DBA25204EBE002B614F /* Debug */,
