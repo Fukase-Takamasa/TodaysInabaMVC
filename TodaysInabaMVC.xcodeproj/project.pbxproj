@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05E32697486423B13757BD41 /* Pods_TodaysInabaMVCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EF0D4D8E372D859B962EC6 /* Pods_TodaysInabaMVCTests.framework */; };
+		19AF2D23DE5AF6EDCFF6D3B5 /* Pods_TodaysInabaMVC_TodaysInabaMVCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051F4E5E13CFE9D5B5258F55 /* Pods_TodaysInabaMVC_TodaysInabaMVCUITests.framework */; };
+		52DA940339D3AF1801DED006 /* Pods_TodaysInabaMVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E2EF2AE9B801F6297DC8D4 /* Pods_TodaysInabaMVC.framework */; };
 		59A72D8D25204EBD002B614F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A72D8C25204EBD002B614F /* AppDelegate.swift */; };
 		59A72D8F25204EBD002B614F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A72D8E25204EBD002B614F /* SceneDelegate.swift */; };
 		59A72D9125204EBD002B614F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A72D9025204EBD002B614F /* ViewController.swift */; };
@@ -38,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		051F4E5E13CFE9D5B5258F55 /* Pods_TodaysInabaMVC_TodaysInabaMVCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodaysInabaMVC_TodaysInabaMVCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D066240E664458551F4DCE /* Pods-TodaysInabaMVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodaysInabaMVC.debug.xcconfig"; path = "Target Support Files/Pods-TodaysInabaMVC/Pods-TodaysInabaMVC.debug.xcconfig"; sourceTree = "<group>"; };
+		25EF0D4D8E372D859B962EC6 /* Pods_TodaysInabaMVCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodaysInabaMVCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45AC1DDDA58214F92799F2D4 /* Pods-TodaysInabaMVCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodaysInabaMVCTests.debug.xcconfig"; path = "Target Support Files/Pods-TodaysInabaMVCTests/Pods-TodaysInabaMVCTests.debug.xcconfig"; sourceTree = "<group>"; };
 		59A72D8925204EBD002B614F /* TodaysInabaMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodaysInabaMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A72D8C25204EBD002B614F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59A72D8E25204EBD002B614F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +62,11 @@
 		59B179F12520CD78008416CA /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		59B179F62520CD80008416CA /* ResultViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResultViewController.storyboard; sourceTree = "<group>"; };
 		59B179FB2520D1D5008416CA /* Extension+Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Storyboard.swift"; sourceTree = "<group>"; };
+		A071151F1EFB693482244934 /* Pods-TodaysInabaMVC-TodaysInabaMVCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodaysInabaMVC-TodaysInabaMVCUITests.release.xcconfig"; path = "Target Support Files/Pods-TodaysInabaMVC-TodaysInabaMVCUITests/Pods-TodaysInabaMVC-TodaysInabaMVCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AEE2170D0B634DB28845017D /* Pods-TodaysInabaMVCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodaysInabaMVCTests.release.xcconfig"; path = "Target Support Files/Pods-TodaysInabaMVCTests/Pods-TodaysInabaMVCTests.release.xcconfig"; sourceTree = "<group>"; };
+		B3E2EF2AE9B801F6297DC8D4 /* Pods_TodaysInabaMVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodaysInabaMVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D08C71E7D4F580625E911CF8 /* Pods-TodaysInabaMVC-TodaysInabaMVCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodaysInabaMVC-TodaysInabaMVCUITests.debug.xcconfig"; path = "Target Support Files/Pods-TodaysInabaMVC-TodaysInabaMVCUITests/Pods-TodaysInabaMVC-TodaysInabaMVCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF24A50ECDF3AD731BE1E965 /* Pods-TodaysInabaMVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodaysInabaMVC.release.xcconfig"; path = "Target Support Files/Pods-TodaysInabaMVC/Pods-TodaysInabaMVC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52DA940339D3AF1801DED006 /* Pods_TodaysInabaMVC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05E32697486423B13757BD41 /* Pods_TodaysInabaMVCTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19AF2D23DE5AF6EDCFF6D3B5 /* Pods_TodaysInabaMVC_TodaysInabaMVCUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +104,8 @@
 				59A72DA225204EBE002B614F /* TodaysInabaTests */,
 				59A72DAD25204EBE002B614F /* TodaysInabaUITests */,
 				59A72D8A25204EBD002B614F /* Products */,
+				D258B0F65D5C4EFD2EC42113 /* Pods */,
+				A4AB243720D0EBBC5CE5217B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +154,30 @@
 			path = TodaysInabaUITests;
 			sourceTree = "<group>";
 		};
+		A4AB243720D0EBBC5CE5217B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3E2EF2AE9B801F6297DC8D4 /* Pods_TodaysInabaMVC.framework */,
+				051F4E5E13CFE9D5B5258F55 /* Pods_TodaysInabaMVC_TodaysInabaMVCUITests.framework */,
+				25EF0D4D8E372D859B962EC6 /* Pods_TodaysInabaMVCTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D258B0F65D5C4EFD2EC42113 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19D066240E664458551F4DCE /* Pods-TodaysInabaMVC.debug.xcconfig */,
+				DF24A50ECDF3AD731BE1E965 /* Pods-TodaysInabaMVC.release.xcconfig */,
+				D08C71E7D4F580625E911CF8 /* Pods-TodaysInabaMVC-TodaysInabaMVCUITests.debug.xcconfig */,
+				A071151F1EFB693482244934 /* Pods-TodaysInabaMVC-TodaysInabaMVCUITests.release.xcconfig */,
+				45AC1DDDA58214F92799F2D4 /* Pods-TodaysInabaMVCTests.debug.xcconfig */,
+				AEE2170D0B634DB28845017D /* Pods-TodaysInabaMVCTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59A72DB325204EBE002B614F /* Build configuration list for PBXNativeTarget "TodaysInabaMVC" */;
 			buildPhases = (
+				9D7F8CC16FE290224CC1C62A /* [CP] Check Pods Manifest.lock */,
 				59A72D8525204EBD002B614F /* Sources */,
 				59A72D8625204EBD002B614F /* Frameworks */,
 				59A72D8725204EBD002B614F /* Resources */,
+				42307B09B3B5BB161524C793 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59A72DB625204EBE002B614F /* Build configuration list for PBXNativeTarget "TodaysInabaMVCTests" */;
 			buildPhases = (
+				52B2C1B697B84597081B0D33 /* [CP] Check Pods Manifest.lock */,
 				59A72D9B25204EBE002B614F /* Sources */,
 				59A72D9C25204EBE002B614F /* Frameworks */,
 				59A72D9D25204EBE002B614F /* Resources */,
@@ -179,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59A72DB925204EBE002B614F /* Build configuration list for PBXNativeTarget "TodaysInabaMVCUITests" */;
 			buildPhases = (
+				CE8D6D78C85EF37E1CE8C9E7 /* [CP] Check Pods Manifest.lock */,
 				59A72DA625204EBE002B614F /* Sources */,
 				59A72DA725204EBE002B614F /* Frameworks */,
 				59A72DA825204EBE002B614F /* Resources */,
+				C39484FE981BC34E426798A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,6 +308,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42307B09B3B5BB161524C793 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodaysInabaMVC/Pods-TodaysInabaMVC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodaysInabaMVC/Pods-TodaysInabaMVC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TodaysInabaMVC/Pods-TodaysInabaMVC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52B2C1B697B84597081B0D33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TodaysInabaMVCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D7F8CC16FE290224CC1C62A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TodaysInabaMVC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C39484FE981BC34E426798A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodaysInabaMVC-TodaysInabaMVCUITests/Pods-TodaysInabaMVC-TodaysInabaMVCUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodaysInabaMVC-TodaysInabaMVCUITests/Pods-TodaysInabaMVC-TodaysInabaMVCUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TodaysInabaMVC-TodaysInabaMVCUITests/Pods-TodaysInabaMVC-TodaysInabaMVCUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE8D6D78C85EF37E1CE8C9E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TodaysInabaMVC-TodaysInabaMVCUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		59A72D8525204EBD002B614F /* Sources */ = {
@@ -445,6 +594,7 @@
 		};
 		59A72DB425204EBE002B614F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D066240E664458551F4DCE /* Pods-TodaysInabaMVC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,6 +615,7 @@
 		};
 		59A72DB525204EBE002B614F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF24A50ECDF3AD731BE1E965 /* Pods-TodaysInabaMVC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -485,6 +636,7 @@
 		};
 		59A72DB725204EBE002B614F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45AC1DDDA58214F92799F2D4 /* Pods-TodaysInabaMVCTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +659,7 @@
 		};
 		59A72DB825204EBE002B614F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEE2170D0B634DB28845017D /* Pods-TodaysInabaMVCTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -529,6 +682,7 @@
 		};
 		59A72DBA25204EBE002B614F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D08C71E7D4F580625E911CF8 /* Pods-TodaysInabaMVC-TodaysInabaMVCUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -549,6 +703,7 @@
 		};
 		59A72DBB25204EBE002B614F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A071151F1EFB693482244934 /* Pods-TodaysInabaMVC-TodaysInabaMVCUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
