@@ -10,6 +10,7 @@
 		05E32697486423B13757BD41 /* Pods_TodaysInabaMVCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EF0D4D8E372D859B962EC6 /* Pods_TodaysInabaMVCTests.framework */; };
 		19AF2D23DE5AF6EDCFF6D3B5 /* Pods_TodaysInabaMVC_TodaysInabaMVCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051F4E5E13CFE9D5B5258F55 /* Pods_TodaysInabaMVC_TodaysInabaMVCUITests.framework */; };
 		52DA940339D3AF1801DED006 /* Pods_TodaysInabaMVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E2EF2AE9B801F6297DC8D4 /* Pods_TodaysInabaMVC.framework */; };
+		592940C52520DA130030C3ED /* GoogleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592940C42520DA130030C3ED /* GoogleData.swift */; };
 		59A72D8D25204EBD002B614F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A72D8C25204EBD002B614F /* AppDelegate.swift */; };
 		59A72D8F25204EBD002B614F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A72D8E25204EBD002B614F /* SceneDelegate.swift */; };
 		59A72D9125204EBD002B614F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A72D9025204EBD002B614F /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 		19D066240E664458551F4DCE /* Pods-TodaysInabaMVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodaysInabaMVC.debug.xcconfig"; path = "Target Support Files/Pods-TodaysInabaMVC/Pods-TodaysInabaMVC.debug.xcconfig"; sourceTree = "<group>"; };
 		25EF0D4D8E372D859B962EC6 /* Pods_TodaysInabaMVCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodaysInabaMVCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AC1DDDA58214F92799F2D4 /* Pods-TodaysInabaMVCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodaysInabaMVCTests.debug.xcconfig"; path = "Target Support Files/Pods-TodaysInabaMVCTests/Pods-TodaysInabaMVCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		592940C42520DA130030C3ED /* GoogleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleData.swift; sourceTree = "<group>"; };
 		59A72D8925204EBD002B614F /* TodaysInabaMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodaysInabaMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A72D8C25204EBD002B614F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59A72D8E25204EBD002B614F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				59B179FB2520D1D5008416CA /* Extension+Storyboard.swift */,
 				59A72D8E25204EBD002B614F /* SceneDelegate.swift */,
 				59B17A032520D5A4008416CA /* API.swift */,
+				592940C42520DA130030C3ED /* GoogleData.swift */,
 				59A72D9025204EBD002B614F /* ViewController.swift */,
 				59A72D9225204EBD002B614F /* Main.storyboard */,
 				59B179F12520CD78008416CA /* ResultViewController.swift */,
@@ -421,6 +424,7 @@
 			files = (
 				59A72D9125204EBD002B614F /* ViewController.swift in Sources */,
 				59A72D8D25204EBD002B614F /* AppDelegate.swift in Sources */,
+				592940C52520DA130030C3ED /* GoogleData.swift in Sources */,
 				59A72D8F25204EBD002B614F /* SceneDelegate.swift in Sources */,
 				59B179FC2520D1D5008416CA /* Extension+Storyboard.swift in Sources */,
 				59B17A042520D5A4008416CA /* API.swift in Sources */,
