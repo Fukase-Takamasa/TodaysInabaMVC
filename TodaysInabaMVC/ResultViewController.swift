@@ -6,15 +6,18 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ResultViewController: UIViewController {
     
+    var resultImageUrl = String()
     
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        imageView.kf.setImage(with: URL(string: resultImageUrl))
     }
     
     @IBAction func buttonTapped(_ sender: Any) {

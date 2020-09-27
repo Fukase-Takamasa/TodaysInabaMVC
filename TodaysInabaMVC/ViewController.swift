@@ -9,8 +9,6 @@ import UIKit
 import Moya
 
 class ViewController: UIViewController {
-    
-//    var googleData: [GoogleData]?
     var randomQuery = ["かわいい", "たまらん", "おしり", "シュール", "笑顔"]
 
     @IBOutlet weak var dateTextField: UITextField!
@@ -36,10 +34,7 @@ class ViewController: UIViewController {
             case let .success(moyaResponse):
                 do {
                     let _googleData = try! JSONDecoder().decode(GoogleData.self, from: moyaResponse.data)
-//                    self.googleData = _googleData
-                    
-//                    print("googleData: \(self.googleData)")
-                    
+                                        
                     let storyboard: UIStoryboard = UIStoryboard(name: "ResultViewController", bundle: nil)
                     let vc = storyboard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
                     vc.modalPresentationStyle = .overCurrentContext
