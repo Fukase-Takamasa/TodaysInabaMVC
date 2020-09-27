@@ -6,7 +6,7 @@ target 'TodaysInabaMVC' do
   use_frameworks!
 
   # Pods for TodaysInabaMVC
-  pod 'Moya/RxSwift', '~> 13.0'
+  pod 'Moya'
   pod 'Kingfisher'
   pod 'Instantiate'
   pod 'InstantiateStandard'
