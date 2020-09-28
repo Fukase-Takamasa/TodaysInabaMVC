@@ -7,9 +7,12 @@
 
 import UIKit
 import Moya
+import PKHUD
 
 class ViewController: UIViewController {
     var randomQuery = ["かわいい", "たまらん", "おしり", "シュール", "笑顔"]
+    var toolBar = UIToolbar()
+    var datePicker = UIDatePicker()
 
     @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
@@ -21,9 +24,15 @@ class ViewController: UIViewController {
         dateTextField.returnKeyType = .done
         nameTextField.delegate = self
         nameTextField.returnKeyType = .done
+        
+        setupToolBar()
+        setupDatePicker()
     }
 
     func searchRequest() {
+        
+        
+        
         //APIリクエスト
         let provider = MoyaProvider<API>()
         provider.request(
@@ -51,7 +60,27 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
+    func setupToolBar() {
+        toolBar.sizeToFit()
+        let spacerItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+        let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
+        toolBar.setItems([spacerItem, doneItem], animated: true)
+    }
+    
+    @objc func done() {
+        view.endEditing(true)
+    }
+    
+    func setupDatePicker() {
+        datePicker.datePickerMode = .date
+        datePicker.timeZone = NSTimeZone.local
+        datePicker.locale = .current
+        dateTextField.inputView = datePicker
+        dateTextField.inputView?.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        dateTextField.inputAccessoryView = toolBar
+    }
+    
 }
 
 extension ViewController: UITextFieldDelegate {
