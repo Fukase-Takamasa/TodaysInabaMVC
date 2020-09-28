@@ -31,7 +31,7 @@ class ViewController: UIViewController {
 
     func searchRequest() {
         
-        
+        HUD.show(.progress)
         
         //APIリクエスト
         let provider = MoyaProvider<API>()
@@ -56,6 +56,12 @@ class ViewController: UIViewController {
                 }
             case let .failure(error):
                 print(error.localizedDescription)
+                
+                let alert = UIAlertController(title: "通信に失敗しました。", message: error.localizedDescription, preferredStyle: .alert)
+                let ok = UIAlertAction(title: "閉じる", style: .default, handler: nil)
+                alert.addAction(ok)
+                self.present(alert, animated: true)
+                
                 break
             }
         }
