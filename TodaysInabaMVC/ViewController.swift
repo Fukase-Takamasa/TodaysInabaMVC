@@ -83,9 +83,17 @@ class ViewController: UIViewController {
     }
     
     func setupDatePicker() {
+        if #available(iOS 14.0, *) {
+            datePicker.preferredDatePickerStyle = .compact
+            datePicker.frame = dateTextField.frame
+            dateTextField.backgroundColor = .clear
+            dateTextField.addSubview(datePicker)
+            dateTextField.placeholder = ""
+        }
         datePicker.datePickerMode = .date
         datePicker.timeZone = NSTimeZone.local
         datePicker.locale = .current
+        datePicker.tintColor = UIColor(red: 33/255, green: 173/255, blue: 182/255, alpha: 1)
         dateTextField.inputView = datePicker
         dateTextField.inputView?.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         dateTextField.inputAccessoryView = toolBar
@@ -98,10 +106,16 @@ extension ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
-        if !(dateTextField.text?.isEmpty ?? true) && !(nameTextField.text?.isEmpty ?? true) {
-            print("日付と名前両方の入力が完了しました")
-            
-            searchRequest()
+        if #available(iOS 14.0, *) {
+            if !(nameTextField.text?.isEmpty ?? true) {
+                print("名前の入力が完了しました")
+                searchRequest()
+            }
+        }else {
+            if !(dateTextField.text?.isEmpty ?? true) && !(nameTextField.text?.isEmpty ?? true) {
+                print("日付と名前両方の入力が完了しました")
+                searchRequest()
+            }
         }
         
         return true
