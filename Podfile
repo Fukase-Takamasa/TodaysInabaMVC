@@ -8,6 +8,7 @@ target 'TodaysInabaMVC' do
   # Pods for TodaysInabaMVC
   pod 'Moya'
   pod 'Kingfisher'
+  pod 'Kingfisher/SwiftUI'
   pod 'PKHUD'
   pod 'SkeletonView'
 
