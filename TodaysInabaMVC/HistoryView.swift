@@ -10,14 +10,25 @@ import struct Kingfisher.KFImage
 
 struct HistoryView: View {
     
+    @State var imageUrlStrings: [String] = []
+        
     var body: some View {
-        ScrollView(.vertical) {
-            LazyVGrid(columns: Array(repeating: GridItem(), count: 2), spacing: 0) {
-                ForEach(0..<100, id: \.self) { index in
-                    KFImage(URL(string: "https://1.bp.blogspot.com/-_CVATibRMZQ/XQjt4fzUmjI/AAAAAAABTNY/nprVPKTfsHcihF4py1KrLfIqioNc_c41gCLcBGAs/s400/animal_chara_smartphone_penguin.png"))
-                        .resizable()
-                        .frame(width: 100, height: 100, alignment: .center)
+        //GeometryReaderでラップすることで画面サイズにアクセスできる
+        GeometryReader { bodyView in
+            ScrollView(.vertical) {
+                LazyVGrid(columns: Array(repeating: GridItem(), count: 2), spacing: 0) {
+                    ForEach(0..<self.imageUrlStrings.count, id: \.self) { index in
+                        KFImage(URL(string: self.imageUrlStrings[index]))
+                            .resizable()
+                            .scaledToFit()
+                            //Itemの縦横をそれぞれ画面横幅の半分にしてる
+                            .frame(width: bodyView.size.width / 2, height: bodyView.size.width / 2)
+                    }
                 }
+            }
+            .onAppear {
+                guard let urlArr = UserDefaults.standard.value(forKey: "imageUrlStrings") as? [String] else {return}
+                self.imageUrlStrings = urlArr
             }
         }
     }
