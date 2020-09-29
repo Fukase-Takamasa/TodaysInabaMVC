@@ -9,6 +9,7 @@ target 'TodaysInabaMVC' do
   pod 'Moya'
   pod 'Kingfisher'
   pod 'PKHUD'
+  pod 'SkeletonView'
 
   target 'TodaysInabaMVCTests' do
     inherit! :search_paths

@@ -8,11 +8,13 @@ PODS:
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
   - PKHUD (5.3.0)
+  - SkeletonView (1.8.7)
 
 DEPENDENCIES:
   - Kingfisher
   - Moya
   - PKHUD
+  - SkeletonView
 
 SPEC REPOS:
   trunk:
@@ -20,13 +22,15 @@ SPEC REPOS:
     - Kingfisher
     - Moya
     - PKHUD
+    - SkeletonView
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
+  SkeletonView: ba5370f41280b2f0a76918bb143c1294232bb4f4
 
-PODFILE CHECKSUM: c5376c01e6b8fc35ca020e6690f979154308fc95
+PODFILE CHECKSUM: c80a7ae7e4fd3ef9856b2648b5a1c11472a55422
 
 COCOAPODS: 1.8.3
