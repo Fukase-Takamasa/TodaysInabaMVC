@@ -22,6 +22,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //空の[String]配列の保存先を予め作っておく
+        UserDefaults.standard.set([String](), forKey: "imageUrlStrings")
 
         dateTextField.delegate = self
         dateTextField.returnKeyType = .done
@@ -51,12 +54,20 @@ class ViewController: UIViewController {
                     self.nameTextField.text = ""
                     
                     let googleData = try! JSONDecoder().decode(GoogleData.self, from: moyaResponse.data)
-                                        
+                    let resultImageUrl = googleData.items[Int.random(in: 0...9)].link
+                    
+                    //UserDefaults内の画像URL配列を取得し、先頭に追加して保存し直す
+                    guard var imageUrlStrings = UserDefaults.standard.value(forKey: "imageUrlStrings") as? [String] else {
+                        print("取得失敗")
+                        return}
+                    imageUrlStrings.insert(resultImageUrl, at: 0)
+                    UserDefaults.standard.set(imageUrlStrings, forKey: "imageUrlStrings")
+                    
                     let storyboard: UIStoryboard = UIStoryboard(name: "ResultViewController", bundle: nil)
                     let vc = storyboard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
                     vc.modalPresentationStyle = .overCurrentContext
-                    
-                    vc.resultImageUrl = googleData.items[Int.random(in: 0...9)].link
+                    //次画面へ画像URLを受け渡し
+                    vc.resultImageUrl = resultImageUrl
                     
                     self.present(vc, animated: true)
                 }catch {
