@@ -76,7 +76,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tappedHistoryButton(_ sender: Any) {
-        
+        self.present(UIHostingController(rootView: HistoryView()), animated: true, completion: nil)
     }
     
     func setupToolBar() {
@@ -117,9 +117,7 @@ extension ViewController: UITextFieldDelegate {
 //        if #available(iOS 14.0, *) {
             if !(nameTextField.text?.isEmpty ?? true) {
                 print("名前の入力が完了しました")
-//                searchRequest()
-                
-                self.present(UIHostingController(rootView: HistoryView()), animated: true, completion: nil)
+                searchRequest()
             }
 //        }else {
 //            if !(dateTextField.text?.isEmpty ?? true) && !(nameTextField.text?.isEmpty ?? true) {
