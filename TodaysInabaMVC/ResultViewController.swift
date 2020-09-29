@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import SkeletonView
 
 class ResultViewController: UIViewController {
     
@@ -17,7 +18,12 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageView.kf.setImage(with: URL(string: resultImageUrl))
+        imageView.isSkeletonable = true
+        imageView.showAnimatedGradientSkeleton()
+        
+        imageView.kf.setImage(with: URL(string: resultImageUrl), completionHandler:  { _ in
+            self.imageView.hideSkeleton()
+        })
     }
     
     @IBAction func buttonTapped(_ sender: Any) {

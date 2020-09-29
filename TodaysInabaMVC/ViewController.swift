@@ -46,6 +46,8 @@ class ViewController: UIViewController {
             switch result {
             case let .success(moyaResponse):
                 do {
+                    self.nameTextField.text = ""
+                    
                     let googleData = try! JSONDecoder().decode(GoogleData.self, from: moyaResponse.data)
                                         
                     let storyboard: UIStoryboard = UIStoryboard(name: "ResultViewController", bundle: nil)
