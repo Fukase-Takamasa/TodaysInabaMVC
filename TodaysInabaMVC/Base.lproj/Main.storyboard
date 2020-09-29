@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -48,7 +47,7 @@
                                             <constraint firstAttribute="height" constant="118" id="PXT-XW-Xw1"/>
                                         </constraints>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chimiTop" translatesAutoresizingMaskIntoConstraints="NO" id="M1D-c3-TyV">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chimi_Top" translatesAutoresizingMaskIntoConstraints="NO" id="M1D-c3-TyV">
                                         <rect key="frame" x="0.0" y="279" width="295" height="295"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="M1D-c3-TyV" secondAttribute="height" multiplier="1:1" id="h3Q-1m-bep"/>
@@ -60,6 +59,20 @@
                                     <constraint firstAttribute="trailing" secondItem="UUb-0Q-VxU" secondAttribute="trailing" constant="60" id="W1s-OT-qTx"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGm-rf-3iC">
+                                <rect key="frame" x="4" y="60" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="kG9-Qo-B31"/>
+                                    <constraint firstAttribute="height" constant="40" id="ztW-6L-iIy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                <state key="normal" title="りれき">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedHistoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fbs-yQ-LnH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -67,22 +80,25 @@
                             <constraint firstItem="sKy-z5-dPX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="IKI-2Z-onk"/>
                             <constraint firstItem="sKy-z5-dPX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="LvN-UW-W0u"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sKy-z5-dPX" secondAttribute="trailing" constant="40" id="W98-31-dUZ"/>
+                            <constraint firstItem="xGm-rf-3iC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="gcy-2O-BHq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sKy-z5-dPX" secondAttribute="bottom" constant="60" id="pgO-Lg-YJh"/>
+                            <constraint firstItem="xGm-rf-3iC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="vac-Rf-05T"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rz3-K1-MRO"/>
                     <connections>
                         <outlet property="dateTextField" destination="hfg-fI-xHf" id="i6t-9V-E3B"/>
+                        <outlet property="historyButton" destination="xGm-rf-3iC" id="zOq-YC-qQE"/>
                         <outlet property="nameTextField" destination="C1i-LL-ElO" id="yht-3k-0J7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742.02898550724649" y="105.80357142857143"/>
+            <point key="canvasLocation" x="741.60000000000002" y="105.66502463054188"/>
         </scene>
     </scenes>
     <resources>
-        <image name="chimiTop" width="651" height="609"/>
+        <image name="chimi_Top" width="651" height="609"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

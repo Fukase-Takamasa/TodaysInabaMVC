@@ -14,7 +14,7 @@ struct HistoryView: View {
         ScrollView(.vertical) {
             LazyVGrid(columns: Array(repeating: GridItem(), count: 2), spacing: 0) {
                 ForEach(0..<100, id: \.self) { index in
-                    KFImage(URL(string: "https://1.bp.blogspot.com/-_CVATibRMZQ/XQjt4fzUmjI/AAAAAAABTNY/nprVPKTfsHcihF4py1KrLfIqioNc_c41gCLcBGAs/s400/animal_chara_smartphone_penguin.png")!)
+                    KFImage(URL(string: "https://1.bp.blogspot.com/-_CVATibRMZQ/XQjt4fzUmjI/AAAAAAABTNY/nprVPKTfsHcihF4py1KrLfIqioNc_c41gCLcBGAs/s400/animal_chara_smartphone_penguin.png"))
                         .resizable()
                         .frame(width: 100, height: 100, alignment: .center)
                 }

@@ -8,6 +8,7 @@
 import UIKit
 import Moya
 import PKHUD
+import SwiftUI
 
 class ViewController: UIViewController {
     var randomQuery = ["かわいい", "たまらん", "おしり", "シュール", "笑顔"]
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var historyButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +75,10 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func tappedHistoryButton(_ sender: Any) {
+        
+    }
+    
     func setupToolBar() {
         toolBar.sizeToFit()
         let spacerItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
@@ -111,7 +117,9 @@ extension ViewController: UITextFieldDelegate {
 //        if #available(iOS 14.0, *) {
             if !(nameTextField.text?.isEmpty ?? true) {
                 print("名前の入力が完了しました")
-                searchRequest()
+//                searchRequest()
+                
+                self.present(UIHostingController(rootView: HistoryView()), animated: true, completion: nil)
             }
 //        }else {
 //            if !(dateTextField.text?.isEmpty ?? true) && !(nameTextField.text?.isEmpty ?? true) {
