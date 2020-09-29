@@ -9,24 +9,13 @@ import SwiftUI
 
 struct HistoryView: View {
     
-    @State var inputText: String = ""
-    @State var displayText: String = ""
-    
     var body: some View {
-        VStack {
-            Text("Hello, \(displayText)")
-            TextField("Your name", text: $inputText, onCommit: {
-                UserDefaults.standard.set(inputText, forKey: "name")
-                displayText = inputText
-                inputText = ""
-            })
-            .padding()
+        LazyVGrid(columns: Array(repeating: GridItem(), count: 2), spacing: 0) {
+            ForEach(0..<12, id: \.self) { index in
+                Text("\(index)")
+                    .frame(width: 100, height: 100, alignment: .center)
+            }
         }
-        .onAppear(perform: {
-            displayText = "Inaba"
-            guard let userDefaultsText = UserDefaults.standard.value(forKey: "name") as? String else {return}
-            displayText = userDefaultsText
-        })
     }
 }
 
