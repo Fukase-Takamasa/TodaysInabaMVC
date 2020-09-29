@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct HistoryView: View {
+    
+    @State var inputText: String = ""
+    @State var displayText: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Hello, \(displayText)")
+            TextField("Your name", text: $inputText, onCommit: {
+                UserDefaults.standard.set(inputText, forKey: "name")
+                displayText = inputText
+                inputText = ""
+            })
+            .padding()
+        }
+        .onAppear(perform: {
+            displayText = "Inaba"
+            guard let userDefaultsText = UserDefaults.standard.value(forKey: "name") as? String else {return}
+            displayText = userDefaultsText
+        })
     }
 }
 
