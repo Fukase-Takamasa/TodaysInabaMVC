@@ -85,13 +85,13 @@ class ViewController: UIViewController {
     }
     
     func setupDatePicker() {
-        if #available(iOS 14.0, *) {
+//        if #available(iOS 14.0, *) {
             datePicker.preferredDatePickerStyle = .compact
             datePicker.frame = dateTextField.frame
             dateTextField.backgroundColor = .clear
             dateTextField.addSubview(datePicker)
             dateTextField.placeholder = ""
-        }
+//        }
         datePicker.datePickerMode = .date
         datePicker.timeZone = NSTimeZone.local
         datePicker.locale = .current
@@ -108,17 +108,17 @@ extension ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
-        if #available(iOS 14.0, *) {
+//        if #available(iOS 14.0, *) {
             if !(nameTextField.text?.isEmpty ?? true) {
                 print("名前の入力が完了しました")
                 searchRequest()
             }
-        }else {
-            if !(dateTextField.text?.isEmpty ?? true) && !(nameTextField.text?.isEmpty ?? true) {
-                print("日付と名前両方の入力が完了しました")
-                searchRequest()
-            }
-        }
+//        }else {
+//            if !(dateTextField.text?.isEmpty ?? true) && !(nameTextField.text?.isEmpty ?? true) {
+//                print("日付と名前両方の入力が完了しました")
+//                searchRequest()
+//            }
+//        }
         
         return true
     }
