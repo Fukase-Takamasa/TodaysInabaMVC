@@ -11,7 +11,7 @@ import PKHUD
 import SwiftUI
 
 class ViewController: UIViewController {
-    var randomQuery = ["かわいい", "たまらん", "おしり", "シュール", "笑顔"]
+    var randomQuery = ["かっこいい", "かわいい", "眼鏡", "へそ", "97年"]
     var toolBar = UIToolbar()
     var datePicker = UIDatePicker()
 
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         let provider = MoyaProvider<API>()
         provider.request(
             .CustomSearch(
-                query: "ちみたん" + randomQuery.randomElement()!,
+                query: "稲葉浩志" + randomQuery.randomElement()!,
                 startIndex: Int.random(in: 1...10))) { (result) in
             
             HUD.hide()
