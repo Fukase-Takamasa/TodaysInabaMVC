@@ -50,29 +50,26 @@ class ViewController: UIViewController {
             
             switch result {
             case let .success(moyaResponse):
-                do {
-                    self.nameTextField.text = ""
-                    
-                    let googleData = try! JSONDecoder().decode(GoogleData.self, from: moyaResponse.data)
-                    let resultImageUrl = googleData.items[Int.random(in: 0...9)].link
-                    
-                    //UserDefaults内の画像URL配列を取得し、先頭に追加して保存し直す
-                    guard var imageUrlStrings = UserDefaults.standard.value(forKey: "imageUrlStrings") as? [String] else {
-                        print("取得失敗")
-                        return}
-                    imageUrlStrings.insert(resultImageUrl, at: 0)
-                    UserDefaults.standard.set(imageUrlStrings, forKey: "imageUrlStrings")
-                    
-                    let storyboard: UIStoryboard = UIStoryboard(name: "ResultViewController", bundle: nil)
-                    let vc = storyboard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
-                    vc.modalPresentationStyle = .overCurrentContext
-                    //次画面へ画像URLを受け渡し
-                    vc.resultImageUrl = resultImageUrl
-                    
-                    self.present(vc, animated: true)
-                }catch {
-                    print("error")
-                }
+                self.nameTextField.text = ""
+                
+                let googleData = try! JSONDecoder().decode(GoogleData.self, from: moyaResponse.data)
+                let resultImageUrl = googleData.items[Int.random(in: 0...9)].link
+                
+                //UserDefaults内の画像URL配列を取得し、先頭に追加して保存し直す
+                guard var imageUrlStrings = UserDefaults.standard.value(forKey: "imageUrlStrings") as? [String] else {
+                    print("取得失敗")
+                    return}
+                imageUrlStrings.insert(resultImageUrl, at: 0)
+                UserDefaults.standard.set(imageUrlStrings, forKey: "imageUrlStrings")
+                
+                let storyboard: UIStoryboard = UIStoryboard(name: "ResultViewController", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
+                //                    vc.modalPresentationStyle = .overCurrentContext
+                //次画面へ画像URLを受け渡し
+                vc.resultImageUrl = resultImageUrl
+                
+                self.present(vc, animated: true)
+                
             case let .failure(error):
                 print(error.localizedDescription)
                 
